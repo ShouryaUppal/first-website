@@ -1,0 +1,116 @@
+/*GENERAL STYLES*/
+*{
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+/* google fonts */
+.dynapuff-header { /* use this for headers -  add new class if changing weight/style */
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.truculenta-body { /* use this for body -  add new class if changing weight/style */
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/*
+style notes for team developers
+all class names for your pages should be(to avoid overwritting others css code): pageNo_whateverElse  eg. p1_mainTitle
+select element in css using id or classes (to avoid overwritting others css code)
+
+use rem unit for any text size(good for responsiveness)
+
+
+
+*/
+
+
+
+
+
+
+/*HOME PAGE*/
+.p0_title{
+	margin-top:5rem;
+	margin-bottom: 5rem;
+	font-size: 7rem;
+	text-align: center;
+}
+
+.p0_allArticles{
+	width: 100%;
+	display:flex;
+	justify-content: center;
+}
+.p0_cardContainer{
+	width:100%;
+}
+/*RITIKA*/
+
+
+
+
+/*ERNESTO*/
+
+
+
+
+/*SZYMON*/
+
+
+
+
+/*SHOURYA*/
+.p3-1_title{
+	margin-top: 0rem;
+	margin-bottom: 2rem;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.p3-1_img1{
+	float: right;
+	margin-left: 1rem;
+}
+
+.p3-1_para1{
+	margin-bottom: 3rem;
+	padding: 7px;
+	text-align: justify;
+}
+
+.p3-1_img2{
+	float: left;
+	margin-right: 1rem;
+}
+
+.p3-1_para2{
+	padding: 7px;
+	text-align: justify;
+}
+
+h1{
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}	
+
+.p3-1_para1, .p3-1_para2{
+	font-family: "Truculenta", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:"wdth" 100;
+}	
