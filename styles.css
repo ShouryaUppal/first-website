@@ -97,9 +97,10 @@ use rem unit for any text size(good for responsiveness)
 .p3-1_para2{
 	padding: 7px;
 	text-align: justify;
+	margin-bottom: 4rem;
 }
 
-h1{
+.p3-1_title, .p3-2_title, .p3-2_title2{
   font-family: "DynaPuff", system-ui;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -107,10 +108,55 @@ h1{
   font-variation-settings:"wdth" 100;
 }	
 
-.p3-1_para1, .p3-1_para2{
+.p3-1_para1, .p3-1_para2, .p3-2_para1, .p3-2_para2{
 	font-family: "Truculenta", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
 	font-variation-settings:"wdth" 100;
 }	
+.p3-2_title{
+	margin-top: 0rem;
+	margin-bottom: 1.5rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.SU *{
+	box-sizing: border-box;
+ }
+.SU{
+	padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.SU img, form{
+	margin: 5px;
+}
+.SU div{
+    display: flex;
+    flex-direction: row-reverse;
+}
+@media only screen and (max-width: 600px) {
+.SU div {
+    flex-direction: column;
+    gap: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+	.SU div {
+    flex-direction: column;
+    gap: 10px;
+    }
+}
+
+.p3-2_para1, .p3-2_para2{
+	text-align:justify;
+}
+.p3-2_form{
+	margin-right:1rem;
+}
+.p3-2_img1{
+	margin-left:0.5rem;
+}
