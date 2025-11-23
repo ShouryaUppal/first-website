@@ -72,7 +72,7 @@ use rem unit for any text size(good for responsiveness)
 
 /*SHOURYA*/
 .p3-1_title{
-	margin-top: 0rem;
+	margin-top: 1rem;
 	margin-bottom: 2rem;
 	font-size: 3rem;
 	text-align: center;
@@ -116,7 +116,7 @@ use rem unit for any text size(good for responsiveness)
 	font-variation-settings:"wdth" 100;
 }	
 .p3-2_title{
-	margin-top: 0rem;
+	margin-top: 1rem;
 	margin-bottom: 1.5rem;
 	font-size: 3rem;
 	text-align: center;
@@ -149,6 +149,11 @@ use rem unit for any text size(good for responsiveness)
     flex-direction: column;
     gap: 10px;
     }
+	.SU2{
+	margin: 0rem;
+	float: left;
+	padding: 0px;
+	}	
 }
 
 .p3-2_para1, .p3-2_para2{
