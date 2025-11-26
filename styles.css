@@ -72,8 +72,8 @@ use rem unit for any text size(good for responsiveness)
 
 /*SHOURYA*/
 .p3-1_title{
-	margin-top: 1rem;
-	margin-bottom: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
 	font-size: 3rem;
 	text-align: center;
 }
@@ -116,14 +116,16 @@ use rem unit for any text size(good for responsiveness)
 	font-variation-settings:"wdth" 100;
 }	
 .p3-2_title{
-	margin-top: 1rem;
-	margin-bottom: 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
 	font-size: 3rem;
 	text-align: center;
 }
+
 .SU *{
 	box-sizing: border-box;
  }
+ 
 .SU{
 	padding: 10px;
     height: 100vh;
@@ -131,37 +133,60 @@ use rem unit for any text size(good for responsiveness)
     flex-direction: column;
     gap: 15px;
 }
+
 .SU img, form{
 	margin: 5px;
 }
+
 .SU div{
     display: flex;
     flex-direction: row-reverse;
-}
-@media only screen and (max-width: 600px) {
-.SU div {
-    flex-direction: column;
-    gap: 10px;
-    }
-}
-@media screen and (max-width: 768px){
-	.SU div {
-    flex-direction: column;
-    gap: 10px;
-    }
-	.SU2{
-	margin: 0rem;
-	float: left;
-	padding: 0px;
-	}	
 }
 
 .p3-2_para1, .p3-2_para2{
 	text-align:justify;
 }
+
 .p3-2_form{
 	margin-right:1rem;
+	text-align: center;
+	width: 200%;
 }
+
 .p3-2_img1{
 	margin-left:0.5rem;
+}
+
+.p3-2_title2{
+	margin-bottom: 2rem;
+}
+
+.SU #base1, #base2{
+	width: 80%;
+}
+
+@media screen and (max-width: 768px){
+	.SU div {
+    flex-direction: column;
+    gap: 10px;
+    }
+	
+	.SU2{
+	margin: 0rem;
+	float: left;
+	padding: 0px;
+	}
+	
+	.p3-2_form{
+		text-align: center;
+		width: 98%;	
+	}
+	
+	.SU #base1, #base2{
+		width: 70%;
+	}
+	
+	.p3-2_title2{
+	margin-bottom: 2rem;
+	}
 }
