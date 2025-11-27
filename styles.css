@@ -23,6 +23,17 @@
     "wdth" 100;
 }
 
+/* Colour Scheme Darkest to Lightest */ 
+:root {
+    /* created variables of colours - use var(variablename) isntead of hexcode in classes - e.g. color: var(--clr-slate-gray) */
+    --clr-charcoal: #243c4cff;
+    --clr-charcoal-2: #2c444cff;
+    --clr-air-force-blue: #5289adff;
+    --clr-slate-gray: #698696ff;
+    --clr-ash-gray: #acbcbfff;
+    --clr-mint-cream: #f4fcfbff;
+}
+
 /*
 style notes for team developers
 all class names for your pages should be(to avoid overwritting others css code): pageNo_whateverElse  eg. p1_mainTitle
@@ -33,6 +44,7 @@ use rem unit for any text size(good for responsiveness)
 
 
 */
+
 
 
 
@@ -76,6 +88,7 @@ use rem unit for any text size(good for responsiveness)
 	margin-bottom: 3rem;
 	font-size: 3rem;
 	text-align: center;
+	text-shadow: 2px 2px var(--clr-ash-gray);
 }
 
 .p3-1_img1{
@@ -85,7 +98,7 @@ use rem unit for any text size(good for responsiveness)
 
 .p3-1_para1{
 	margin-bottom: 3rem;
-	padding: 7px;
+	padding: 15px;
 	text-align: justify;
 }
 
@@ -95,7 +108,7 @@ use rem unit for any text size(good for responsiveness)
 }
 
 .p3-1_para2{
-	padding: 7px;
+	padding: 15px;
 	text-align: justify;
 	margin-bottom: 4rem;
 }
@@ -120,6 +133,7 @@ use rem unit for any text size(good for responsiveness)
 	margin-bottom: 3rem;
 	font-size: 3rem;
 	text-align: center;
+	text-shadow: 2px 2px var(--clr-ash-gray);
 }
 
 .SU *{
@@ -134,8 +148,14 @@ use rem unit for any text size(good for responsiveness)
     gap: 15px;
 }
 
-.SU img, form{
+.SU form{
 	margin: 5px;
+	margin-right: 14px;
+}
+
+.SU img{
+	margin: 3px;
+	margin-left: 14px;
 }
 
 .SU div{
@@ -145,16 +165,38 @@ use rem unit for any text size(good for responsiveness)
 
 .p3-2_para1, .p3-2_para2{
 	text-align:justify;
+	padding: 5px;
 }
 
 .p3-2_form{
 	margin-right:1rem;
 	text-align: center;
 	width: 200%;
+	border: 2px solid black; /* The border */
+    border-radius: 10px; /* for smooth corners */
+    background-color: var(--clr-ash-gray);  
+	padding: 5px;
+	box-shadow: 0 0 10px 1px var(--clr-charcoal-2);
+}
+.p3-2_form input{
+	border: 2px solid black;
+	background-color: var(--clr-mint-cream);
+}
+.p3-2_form input[type="checkbox"]{
+	width: 15px;
+    height: 15px;
+	display: inline-block;
+    vertical-align: middle;
+	cursor: pointer;
 }
 
-.p3-2_img1{
-	margin-left:0.5rem;
+.p3-2_form label{
+	font-weight: bold;
+}
+
+.p3-2_button{
+	background-color:var(--clr-charcoal-2);
+	color:var(--clr-mint-cream);
 }
 
 .p3-2_title2{
@@ -165,16 +207,31 @@ use rem unit for any text size(good for responsiveness)
 	width: 80%;
 }
 
+.p3-2_background, .p3-1_background{
+	background-color: var(--clr-slate-gray);
+}
+
 @media screen and (max-width: 768px){
+	.p3-1_img1{
+		float: none;
+		margin-left: 0.6rem;
+		margin-bottom: 2rem;      
+	}
+	.p3-1_img2{
+		float: left;
+		margin-left: 0.6rem;
+		margin-bottom: 2rem;
+	}
+	
 	.SU div {
-    flex-direction: column;
-    gap: 10px;
+		flex-direction: column;
+		gap: 10px;
     }
 	
 	.SU2{
-	margin: 0rem;
-	float: left;
-	padding: 0px;
+		margin: 0rem;
+		float: left;
+		padding: 0px;
 	}
 	
 	.p3-2_form{
@@ -187,6 +244,15 @@ use rem unit for any text size(good for responsiveness)
 	}
 	
 	.p3-2_title2{
-	margin-bottom: 2rem;
+		margin-bottom: 2rem;
 	}
-}
+	
+	.SU img, form{
+		margin: 5px;
+	}
+	
+	.SU2 p{
+		padding: 10px
+	}
+}  
+
