@@ -156,7 +156,7 @@ use rem unit for any text size(good for responsiveness)
     display: flex;
     flex-direction: column;
     gap: 15px;
-	margin-bottom:2rem;
+	margin-bottom:4rem;
 }
 
 .su form{
@@ -294,5 +294,9 @@ use rem unit for any text size(good for responsiveness)
 }
 
 .p3-1_para1 p, .p3-1_para2 p{
+	font-size: 1.3rem;
+}
+
+.p3-2_para1 p, .p3-2_para2 p{
 	font-size: 1.3rem;
 }
