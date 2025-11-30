@@ -84,11 +84,12 @@ use rem unit for any text size(good for responsiveness)
 
 /*SHOURYA*/
 .p3-1_title{
-	margin-top: 2rem;
-	margin-bottom: 3rem;
+	margin-top: 3rem;
+	margin-bottom: 4rem;
 	font-size: 3rem;
 	text-align: center;
-	text-shadow: 2px 2px var(--clr-ash-gray);
+	text-shadow: 5px 5px black;
+	color: var(--clr-mint-cream);
 }
 
 .p3-1_img1{
@@ -97,9 +98,14 @@ use rem unit for any text size(good for responsiveness)
 }
 
 .p3-1_para1{
-	margin-bottom: 3rem;
+	margin-bottom: 1.5rem;
 	padding: 15px;
 	text-align: justify;
+	background: rgba(255, 255, 255, 0.65);
+	box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.2);
+	font-weight: 700;
+	border-radius: 10px;
+	overflow: hidden;  /* forces the image to stay inside */
 }
 
 .p3-1_img2{
@@ -111,12 +117,16 @@ use rem unit for any text size(good for responsiveness)
 	padding: 15px;
 	text-align: justify;
 	margin-bottom: 4rem;
+	background: rgba(255, 255, 255, 0.65);
+	box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.2);
+	font-weight: 700;
+	border-radius: 10px;
+	overflow: hidden;  /* forces the image to stay inside */
 }
 
 .p3-1_title, .p3-2_title, .p3-2_title2{
   font-family: "DynaPuff", system-ui;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
   font-variation-settings:"wdth" 100;
 }	
@@ -124,16 +134,16 @@ use rem unit for any text size(good for responsiveness)
 .p3-1_para1, .p3-1_para2, .p3-2_para1, .p3-2_para2{
 	font-family: "Truculenta", sans-serif;
 	font-optical-sizing: auto;
-	font-weight: 400;
 	font-style: normal;
 	font-variation-settings:"wdth" 100;
 }	
 .p3-2_title{
-	margin-top: 2rem;
-	margin-bottom: 3rem;
+	margin-top: 3rem;
+	margin-bottom: 4rem;
 	font-size: 3rem;
 	text-align: center;
-	text-shadow: 2px 2px var(--clr-ash-gray);
+	text-shadow: 4px 4px black;
+	color: var(--clr-mint-cream);
 }
 
 .SU *{
@@ -163,9 +173,14 @@ use rem unit for any text size(good for responsiveness)
     flex-direction: row-reverse;
 }
 
+
 .p3-2_para1, .p3-2_para2{
 	text-align:justify;
 	padding: 5px;
+	background: rgba(255, 255, 255, 0.65);
+	box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.2);
+	font-weight: 700;
+	border-radius: 10px;
 }
 
 .p3-2_form{
@@ -176,7 +191,7 @@ use rem unit for any text size(good for responsiveness)
     border-radius: 10px; /* for smooth corners */
     background-color: var(--clr-ash-gray);  
 	padding: 5px;
-	box-shadow: 0 0 10px 1px var(--clr-charcoal-2);
+	box-shadow: 0 0 10px 5px var(--clr-charcoal-2);
 }
 .p3-2_form input{
 	border: 2px solid black;
@@ -209,6 +224,22 @@ use rem unit for any text size(good for responsiveness)
 
 .p3-2_background, .p3-1_background{
 	background-color: var(--clr-slate-gray);
+}
+
+.p3-2_background{
+	 background-image: url("images/p4img1.jpg");
+}
+
+.p3-2_background header nav{
+	background-color:  var(--clr-mint-cream);
+}
+
+.p3-1_background header nav{
+	background-color:  var(--clr-mint-cream);
+}
+
+.p3-1_background{
+	 background-image: url("images/p4-1_img1.jpg");
 }
 
 @media screen and (max-width: 768px){
@@ -255,4 +286,4 @@ use rem unit for any text size(good for responsiveness)
 		padding: 10px
 	}
 }  
-
+	
