@@ -98,7 +98,7 @@ use rem unit for any text size(good for responsiveness)
 }
 
 .p3-1_para1{
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 	padding: 15px;
 	text-align: justify;
 	background: rgba(255, 255, 255, 0.65);
@@ -116,7 +116,7 @@ use rem unit for any text size(good for responsiveness)
 .p3-1_para2{
 	padding: 15px;
 	text-align: justify;
-	margin-bottom: 4rem;
+	margin-bottom: 1rem;
 	background: rgba(255, 255, 255, 0.65);
 	box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.2);
 	font-weight: 700;
@@ -146,37 +146,37 @@ use rem unit for any text size(good for responsiveness)
 	color: var(--clr-mint-cream);
 }
 
-.SU *{
+.su *{
 	box-sizing: border-box;
  }
  
-.SU{
+.su{
 	padding: 10px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 15px;
+	margin-bottom:2rem;
 }
 
-.SU form{
+.su form{
 	margin: 5px;
 	margin-right: 14px;
 }
 
-.SU img{
+.su img{
 	margin: 3px;
 	margin-left: 14px;
 }
 
-.SU div{
+.su div{
     display: flex;
     flex-direction: row-reverse;
 }
 
-
 .p3-2_para1, .p3-2_para2{
 	text-align:justify;
-	padding: 5px;
+	padding: 15px;
 	background: rgba(255, 255, 255, 0.65);
 	box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.2);
 	font-weight: 700;
@@ -193,10 +193,12 @@ use rem unit for any text size(good for responsiveness)
 	padding: 5px;
 	box-shadow: 0 0 10px 5px var(--clr-charcoal-2);
 }
+
 .p3-2_form input{
 	border: 2px solid black;
 	background-color: var(--clr-mint-cream);
 }
+
 .p3-2_form input[type="checkbox"]{
 	width: 15px;
     height: 15px;
@@ -218,7 +220,7 @@ use rem unit for any text size(good for responsiveness)
 	margin-bottom: 2rem;
 }
 
-.SU #base1, #base2{
+.su #base1, #base2{
 	width: 80%;
 }
 
@@ -249,28 +251,22 @@ use rem unit for any text size(good for responsiveness)
 		margin-bottom: 2rem;      
 	}
 	.p3-1_img2{
-		float: left;
+		float: none;
 		margin-left: 0.6rem;
 		margin-bottom: 2rem;
 	}
 	
-	.SU div {
+	.su div {
 		flex-direction: column;
 		gap: 10px;
     }
-	
-	.SU2{
-		margin: 0rem;
-		float: left;
-		padding: 0px;
-	}
 	
 	.p3-2_form{
 		text-align: center;
 		width: 98%;	
 	}
 	
-	.SU #base1, #base2{
+	.su #base1, #base2{
 		width: 70%;
 	}
 	
@@ -278,12 +274,25 @@ use rem unit for any text size(good for responsiveness)
 		margin-bottom: 2rem;
 	}
 	
-	.SU img, form{
+	.su img, form{
 		margin: 5px;
 	}
 	
-	.SU2 p{
+	.su2 p{
 		padding: 10px
 	}
 }  
-	
+.su2 div {
+    display: block;
+    flex-direction: unset;
+}
+
+.su2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.p3-1_para1 p, .p3-1_para2 p{
+	font-size: 1.3rem;
+}
