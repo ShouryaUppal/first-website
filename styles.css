@@ -83,13 +83,16 @@ use rem unit for any text size(good for responsiveness)
 
 
 /*SHOURYA*/
+/*Styling of page*/
 .p3-1_title{
 	margin-top: 3rem;
 	margin-bottom: 4rem;
 	font-size: 3rem;
 	text-align: center;
-	text-shadow: 5px 5px black;
-	color: var(--clr-mint-cream);
+	/*this adds shadow behind the text*/
+	text-shadow: 5px 5px black; 
+	/*colour from the variable set above*/
+	color: var(--clr-mint-cream); 
 }
 
 .p3-1_img1{
@@ -100,12 +103,17 @@ use rem unit for any text size(good for responsiveness)
 .p3-1_para1{
 	margin-bottom: 1rem;
 	padding: 15px;
-	text-align: justify;
-	background: rgba(255, 255, 255, 0.65);
-	box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.2);
+	/*used to justify the text*/
+	text-align: justify; 
+	/*semi-transparent background to make text more visible with background image*/
+	background: rgba(255, 255, 255, 0.65); /*values inside denotes the intensity of colours and the opacity*/
+	/*offset x, offset y, blur radius and colour intensity with opacity*/
+	box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.2); 
+	/*for making the text bold*/
 	font-weight: 700;
+	/*sets the radius of the border*/
 	border-radius: 10px;
-	overflow: hidden;  /* forces the image to stay inside */
+	overflow: hidden;  /* forces the image to stay inside the border radius*/
 }
 
 .p3-1_img2{
@@ -117,13 +125,14 @@ use rem unit for any text size(good for responsiveness)
 	padding: 15px;
 	text-align: justify;
 	margin-bottom: 1rem;
-	background: rgba(255, 255, 255, 0.65);
+	background: rgba(255, 255, 255, 0.65); /*values inside denotes the intensity of colours and the opacity*/
 	box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.2);
 	font-weight: 700;
 	border-radius: 10px;
 	overflow: hidden;  /* forces the image to stay inside */
 }
 
+/*changing the font of all the titles*/
 .p3-1_title, .p3-2_title, .p3-2_title2{
   font-family: "DynaPuff", system-ui;
   font-optical-sizing: auto;
@@ -131,6 +140,7 @@ use rem unit for any text size(good for responsiveness)
   font-variation-settings:"wdth" 100;
 }	
 
+/*changing the font of all the paragraphs*/
 .p3-1_para1, .p3-1_para2, .p3-2_para1, .p3-2_para2{
 	font-family: "Truculenta", sans-serif;
 	font-optical-sizing: auto;
@@ -140,12 +150,17 @@ use rem unit for any text size(good for responsiveness)
 .p3-2_title{
 	margin-top: 3rem;
 	margin-bottom: 4rem;
+	/*changes size of the text*/
 	font-size: 3rem;
+	/*aligns text to the centre*/
 	text-align: center;
+	/*sets shadow to the title*/
 	text-shadow: 4px 4px black;
+	/*changes colour of the text*/
 	color: var(--clr-mint-cream);
 }
 
+/*includes padding and border in width/height accordingly*/
 .su *{
 	box-sizing: border-box;
  }
@@ -155,7 +170,8 @@ use rem unit for any text size(good for responsiveness)
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /*for gap between the content inside flexbox*/
+	gap: 15px;
 	margin-bottom:4rem;
 }
 
@@ -171,7 +187,8 @@ use rem unit for any text size(good for responsiveness)
 
 .su div{
     display: flex;
-    flex-direction: row-reverse;
+    /*aligns all the div inside su in reverse order*/
+	flex-direction: row-reverse;
 }
 
 .p3-2_para1, .p3-2_para2{
@@ -191,26 +208,28 @@ use rem unit for any text size(good for responsiveness)
     border-radius: 10px; /* for smooth corners */
     background-color: var(--clr-ash-gray);  
 	padding: 5px;
-	box-shadow: 0 0 10px 5px var(--clr-charcoal-2);
+	box-shadow: 0 0 10px 5px var(--clr-charcoal-2); /*form shadow*/
 }
 
 .p3-2_form input{
-	border: 2px solid black;
+	border: 2px solid black; /*border*/
 	background-color: var(--clr-mint-cream);
 }
 
 .p3-2_form input[type="checkbox"]{
 	width: 15px;
     height: 15px;
+	/*so that element stays inline and margins, padding works normally*/
 	display: inline-block;
     vertical-align: middle;
-	cursor: pointer;
+	cursor: pointer; /*changes the cursor to pointing when hovering over*/
 }
 
 .p3-2_form label{
 	font-weight: bold;
 }
 
+/*styling the submit button*/
 .p3-2_button{
 	background-color:var(--clr-charcoal-2);
 	color:var(--clr-mint-cream);
@@ -220,32 +239,37 @@ use rem unit for any text size(good for responsiveness)
 	margin-bottom: 2rem;
 }
 
+/*sets width of input in the form*/
 .su #su_name, #su_email{
-	width: 80%;
+	width: 80%; 
 }
 
+/*sets background colour to the webpages*/
 .p3-2_background, .p3-1_background{
 	background-color: var(--clr-slate-gray);
 }
 
 .p3-2_background{
-	 background-image: url("images/p4img1.jpg");
+	 background-image: url("images/p3img1.jpg"); /*image source: https://www.pexels.com/photo/sewage-waste-exiting-into-river-5526877/*/
 }
 
 .p3-2_background header nav{
-	background-color:  var(--clr-mint-cream);
+	background-color:  var(--clr-mint-cream); 
 }
 
+/*sets background colour to the navbar*/
 .p3-1_background header nav{
 	background-color:  var(--clr-mint-cream);
 }
 
 .p3-1_background{
-	 background-image: url("images/p4-1_img1.jpg");
+	 background-image: url("images/p3-1_img1.jpg"); /*image source: https://www.pexels.com/photo/black-and-brown-round-drum-set-5115943/*/
 }
 
+/*Responsive design - media queries*/
 @media screen and (max-width: 768px){
 	.p3-1_img1{
+		/*removes the float from the small screen*/
 		float: none;
 		margin-left: 0.6rem;
 		margin-bottom: 2rem;      
@@ -257,19 +281,24 @@ use rem unit for any text size(good for responsiveness)
 	}
 	
 	.su div {
+		/*sets the elements in the flexbox in column format on small screens*/
 		flex-direction: column;
+		/*reduces gap between the elements in the flexbox*/
 		gap: 10px;
     }
 	
 	.p3-2_form{
 		text-align: center;
+		/*reduces the width of the form on small screen*/
 		width: 98%;	
 	}
 	
 	.su #su_name, #su_email{
+		/*reduces the width of the form inputs on small screen*/
 		width: 70%;
 	}
 	
+	/*styling on small screen*/
 	.p3-2_title2{
 		margin-bottom: 2rem;
 	}
@@ -282,25 +311,29 @@ use rem unit for any text size(good for responsiveness)
 		padding: 10px
 	}
 }  
+
+/*removes display flex from su2 and make it act like block element*/
 .su2 div {
     display: block;
     flex-direction: unset;
 }
 
+/*images will act as block element and will automatically adjust size according to aspect ratio*/
 .su2 img {
     width: 100%;
     height: auto;
     display: block;
 }
 
+/*changes the font size of text in all the paragraphs*/
 .p3-1_para1 p, .p3-1_para2 p{
 	font-size: 1.3rem;
 }
-
 .p3-2_para1 p, .p3-2_para2 p{
 	font-size: 1.3rem;
 }
 
+/*styling for error message in the form*/
 #su_name-error, #su_email-error{
 	display: block;
     margin-top: 5px;
