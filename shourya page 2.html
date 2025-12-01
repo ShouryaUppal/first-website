@@ -5,8 +5,9 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="author" content="Shourya Mahesh Uppal">
-            <meta name="description" content="Goal 6 Clean Water and Sanitation- Wastewater Treatment and Water Ecosystems">
-
+            <meta name="description" content="Sustainable Development Goal 6 - Clean Water and Sanitation - Environmental Protection - Water Ecosystems">
+			<meta name="title" content="Sustainable Development Goal 6.6, Water Ecosystems">
+			
 			<title>Ohome | Water Ecosystems</title>
 			
             <!-- Bootstrap v5.3.8 -->
@@ -16,7 +17,10 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
-            
+           
+			<!-- link to external javascript -->
+			<script src="./js/script.js" defer></script>
+			
 			<!-- link to icon -->
 			<script src="https://kit.fontawesome.com/c194c24416.js" crossorigin="anonymous"></script>
             
@@ -74,16 +78,18 @@
 					</div>
 					<div class="p3-2_para2">
 						<p>Some Strategies to protect and restore water ecosystems Aligned with SDG 6.6 are: Restoring rivers, wetlands and mangroves, reducing pollution through proper wastewater treatment, protecting natural buffers such as forests and riparian zones, implementing sustainable agriculture and reducing chemical runoff, monitoring water quality and ecosystem health, conserving groundwater and preventing over-extraction, using nature-based solutions (e.g., constructed wetlands). Social, environmental and economic benefits include cleaner water for communities, increased biodiversity and healthier habitats, natural flood protection, reduced cost of water treatment, eco-tourism and livelihood opportunities, climate resilience and reduced disaster risks. Some technologies and solutions supporting SDG 6.6 are real-time water quality monitoring sensors, watershed modeling and restoration technologies, remote sensing and satellite ecosystem mapping, nature-based wastewater treatment (e.g., reed bed systems), riverbank stabilization and erosion control systems, smart irrigation and water-saving technologies. Subscribe to our newsletter to learn how sustainable ecosystem management can create cleaner water and healthier environments.<p>
-						<form class="p3-2_form">	
+						<form class="p3-2_form" onsubmit="return su_validateForm()">	
 							<h2 class="p3-2_title2">Newsletter</h2>
-							<label for="base1">Full Name:</label><br>
-							<input id="base1" type="text" placeholder="Enter your full name" autocomplete="off" required><br><br>
+							<label for="su_name">Full Name:</label><br>
+							<input id="su_name" type="text" placeholder="Enter your full name" autocomplete="off">
+							<span id="su_name-error" class="error-message"></span><br>
 											
-							<label for="base2">Email:</label><br>
-							<input id="base2" type="email" placeholder="Enter your email address" autocomplete="off" required><br><br>
+							<label for="su_email">Email:</label><br>
+							<input id="su_email" type="email" placeholder="Enter your email address" autocomplete="off">
+							<span id="su_email-error" class="error-message"></span><br>
 								
-							<label for="base3">Keep Me Updated</label>
-							<input id="base3" type="checkbox"><br><br>
+							<label for="su_checkbox">Keep Me Updated</label>
+							<input id="su_checkbox" type="checkbox"><br><br>
 							<button class="p3-2_button" type="submit">Submit</button>
 						</form>	
 					</div>

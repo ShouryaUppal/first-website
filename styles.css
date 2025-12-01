@@ -220,7 +220,7 @@ use rem unit for any text size(good for responsiveness)
 	margin-bottom: 2rem;
 }
 
-.su #base1, #base2{
+.su #su_name, #su_email{
 	width: 80%;
 }
 
@@ -266,7 +266,7 @@ use rem unit for any text size(good for responsiveness)
 		width: 98%;	
 	}
 	
-	.su #base1, #base2{
+	.su #su_name, #su_email{
 		width: 70%;
 	}
 	
@@ -299,4 +299,10 @@ use rem unit for any text size(good for responsiveness)
 
 .p3-2_para1 p, .p3-2_para2 p{
 	font-size: 1.3rem;
+}
+
+#su_name-error, #su_email-error{
+	display: block;
+    margin-top: 5px;
+    color: red;
 }
