@@ -20,7 +20,7 @@ function su_validateForm() {
 			
 			let isValid = true;
 			//=== is strict equality, type must be the same. 
-            if (name_su === "" || name_su.length < 3) {
+            if (name_su === "" || name_su.length <3) {
 				//returns false if input name is empty or its length is less than 3 showing an error message
                 nameErr_su.textContent = "Please enter your name properly.";
                 isValid = false;
