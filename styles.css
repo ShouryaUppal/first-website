@@ -4,6 +4,13 @@
 	font-size: 16px;
 }
 
+body:not(nav),
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+
 /* google fonts */
 .dynapuff-header { /* use this for headers -  add new class if changing weight/style */
   font-family: "DynaPuff", system-ui;
@@ -106,7 +113,7 @@ use rem unit for any text size(good for responsiveness)
 	/*used to justify the text*/
 	text-align: justify; 
 	/*semi-transparent background to make text more visible with background image*/
-	background: rgba(255, 255, 255, 0.65); /*values inside denotes the intensity of colours and the opacity*/
+	background: rgba(255, 255, 255, 0.85); /*values inside denotes the intensity of colours and the opacity*/
 	/*offset x, offset y, blur radius and colour intensity with opacity*/
 	box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.2); 
 	/*for making the text bold*/
@@ -125,7 +132,7 @@ use rem unit for any text size(good for responsiveness)
 	padding: 15px;
 	text-align: justify;
 	margin-bottom: 1rem;
-	background: rgba(255, 255, 255, 0.65); /*values inside denotes the intensity of colours and the opacity*/
+	background: rgba(255, 255, 255, 0.85); /*values inside denotes the intensity of colours and the opacity*/
 	box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.2);
 	font-weight: 700;
 	border-radius: 10px;
@@ -166,13 +173,12 @@ use rem unit for any text size(good for responsiveness)
  }
  
 .su{
-	padding: 10px;
-    height: 100vh;
+	padding: 15px;
     display: flex;
     flex-direction: column;
     /*for gap between the content inside flexbox*/
 	gap: 15px;
-	margin-bottom:4rem;
+	margin-bottom:2rem;
 }
 
 .su form{
@@ -194,7 +200,7 @@ use rem unit for any text size(good for responsiveness)
 .p3-2_para1, .p3-2_para2{
 	text-align:justify;
 	padding: 15px;
-	background: rgba(255, 255, 255, 0.65);
+	background: rgba(255, 255, 255, 0.85);
 	box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.2);
 	font-weight: 700;
 	border-radius: 10px;
@@ -204,6 +210,7 @@ use rem unit for any text size(good for responsiveness)
 	margin-right:1rem;
 	text-align: center;
 	width: 200%;
+	max-width: 400px; /*restricts form to go too wide*/
 	border: 2px solid black; /* The border */
     border-radius: 10px; /* for smooth corners */
     background-color: var(--clr-ash-gray);  
@@ -250,7 +257,7 @@ use rem unit for any text size(good for responsiveness)
 }
 
 .p3-2_background{
-	 background-image: url("images/p3img1.jpg"); /*image source: https://www.pexels.com/photo/sewage-waste-exiting-into-river-5526877/*/
+	 background-image: url("images/suimg1.jpg"); /*image source: https://www.pexels.com/photo/sewage-waste-exiting-into-river-5526877/*/
 }
 
 .p3-2_background header nav{
@@ -263,7 +270,7 @@ use rem unit for any text size(good for responsiveness)
 }
 
 .p3-1_background{
-	 background-image: url("images/p3-1_img1.jpg"); /*image source: https://www.pexels.com/photo/black-and-brown-round-drum-set-5115943/*/
+	 background-image: url("images/su-1_img1.jpg"); /*image source: https://www.pexels.com/photo/black-and-brown-round-drum-set-5115943/*/
 }
 
 /*Responsive design - media queries*/
@@ -338,4 +345,9 @@ use rem unit for any text size(good for responsiveness)
 	display: block;
     margin-top: 5px;
     color: red;
+}
+
+/*Adds some padding to the content of page 1 */
+.su2{
+	padding:15px
 }
